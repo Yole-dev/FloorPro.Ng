@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+nav div {
+    padding-left: 3rem;
+    padding-right: 5rem;
+}
+
+nav ul li a {
+    color: rgb(26, 20, 72);
+}
+
+nav ul li a:hover {
+    color:rgb(255, 197, 0);
+}
+
+main {
+    color: rgb(26, 20, 72);
+}
+
+ form button {
+    background: rgb(255, 197, 0);
+}
+
+form button:hover {
+    border: solid 1px rgb(255, 197, 0);
+    background: rgb(243,243,243);
+    transform: scale(97%);
+    transition: 0.2s ease-in 0.3s;
+}
+
+
+footer {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    background-color: rgb(255, 197, 0);
+    color: rgb(26, 20, 72);
+}
+
+.social-links a {
+    background: rgb(26, 20, 72);
+}
+
+.social-links a i {
+    color: rgb(255, 197, 0);
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in 0.3s;
+}
+
+.social-links a:hover i {
+    color: rgb(243,243,243);
+    transition: 0.2s ease-in 0.3s;
+}
+

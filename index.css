@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header > .div1 {
+    background: rgb(26, 20, 72);
+    padding-left: 3rem;
+    padding-right: 5rem;
+}
+
+
+button:focus {
+    outline: none !important;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+.welcome {
+    flex: 1;
+}
+
+
+nav div {
+    padding-left: 3rem;
+    padding-right: 5rem;
+}
+
+.searchbar input{
+    background: rgba(243, 243, 243);
+}
+
+.searchbar input:focus {
+    outline: none;
+}
+
+.searchbar button {
+    color:rgb(26, 20, 72);
+}
+
+.search {
+    background: rgb(26, 20, 72);
+}
+
+/* .searchDropdown div {
+    z-index: 999;
+}
+
+.searchDropdown:hover div {
+    display: block;
+} */
+
+.shop-icons button i {
+    color:rgb(26, 20, 72);
+}
+
+.shop-icons button i:hover {
+    color: rgb(255, 197, 0);
+    transform: scale(97%);
+    transition: 0.2s ease-in 0.3s;
+}
+
+
+.shop-icons button i:active {
+    color: rgb(255, 197, 0);
+}
+
+.div2 button{
+    background: rgb(26, 20, 72);
+    height: 50px !important;
+}
+
+.dropdown {
+    cursor: pointer;
+}
+
+.drop {
+    background:rgb(26, 20, 72);
+}
+
+.drop:hover .dropdown-content {
+    display: flex;
+}
+
+.drop:hover {
+    color:rgb(26, 20, 72);
+    background:rgba(243, 243, 243);
+}
+
+.dropdown-content {
+    background:rgba(243, 243, 243);
+    color:rgb(26, 20, 72);
+}
+
+  .dropdown-content a:hover {
+    color: rgb(255, 197, 0);
+  }
+
+
+.div2 .innerdiv {
+    background: rgb(243,243,243);
+    flex: 1;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+
+.innerdiv ul li {
+    color:rgb(26, 20, 72);
+}
+
+.innerdiv ul li:hover {
+    color:rgb(255, 197, 0);
+}
+
+.innerdiv button {
+    background: rgb(255, 197, 0);
+}
+
+.innerdiv button:hover {
+    background: white;
+    border: 1px solid rgb(255, 197, 0);
+    transform: scale(.9);
+    transition: 0.2s ease-in 0.3s;
+}
+
+
+
+
+main {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    color: rgb(26, 20, 72);
+}
+
+.delivery div {
+    border: 2px solid rgb(26, 20, 72);
+    border-radius: 15px;
+}
+
+.delivery {
+    color: rgb(26, 20, 72);
+}
+
+.appointment-text {
+    background: rgb(26, 20, 72);
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+}
+
+.appointment-text p {
+    padding: 3rem;
+    padding-left: 7rem;
+    padding-right: 6rem;
+}
+
+main form {
+    position: relative;
+    right: 5rem;
+}
+
+main form label {
+    color: rgb(26, 20, 72);
+}
+
+/* .select-time {
+    position: relative;
+    left: 3rem;
+} */
+
+main form button {
+ background: rgb(255, 197, 0);
+}
+
+main form button:hover {
+    background: white;
+    border: 1px solid rgb(255, 197, 0);
+    transform: scale(.9);
+    transition: 0.2s ease-in 0.3s;
+}
+
+.col-1 {
+    background: url(images/SPC/90fa726d6600405dbe1eb52960546321.jpg) !important;
+    background-size: cover !important;
+}
+
+.col-1:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in 0.3s;
+}
+
+.col-2 {
+    background: url(images/SPC/DC-Black-diamond_bvw_21.jpg) !important;
+    background-size: cover !important;
+}
+
+.col-2:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in 0.3s;
+}
+
+.col-3 {
+    background: url(images/SPC/DC-Alabaster_bvw_08.jpg) !important;
+    background-size: cover !important;
+}
+
+.col-3:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in 0.3s;
+}
+
+.col-4 {
+    background: url(Images/SPC/DC-SunStone_42.jpg) !important;
+    background-size: cover !important;
+}
+
+.col-4:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in 0.3s;
+}
+
+.badge {
+    background: rgb(255, 197, 0) !important;
+}
+
+.arrivals {
+    position: relative;
+    right: 7.2rem;
+}
+
+
+
+.fa-star-o {
+    color: rgb(255, 197, 0);
+}
+
+.grid div>div i {
+    position: relative;
+    top: 2.5rem;
+    left: 2.5rem;
+}
+
+.grid div p span {
+    position: relative;
+    left: 1rem;
+}
+
+.quotation {
+    background: rgb(243,243,243);
+}
+
+
+.getbutton {
+    background: rgb(255, 197, 0);
+}
+
+.getbutton:hover {
+    background: white;
+    border: 1px solid rgb(255, 197, 0);
+    transform: scale(.9);
+    transition: 0.2s ease-in 0.3s;
+}
+
+.swiper {
+    width: 800px;
+    height: 250px;
+    background: rgb(243,243,243);
+  }
+
+
+.column1 {
+    background: url(images/carpet-tiles/carpet-tiles-picture-id177542799.jpg) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.column1:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in 0.3s;
+}
+
+.column2 {
+    background: url(images/carpet-tiles/carpet-tiles-picture-id1049973156.jpg) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.column2:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in 0.3s;
+}
+
+.column3 {
+    background: url(images/carpet-tiles/8cc8dfe2f173207e193a12422021e68d.jpg) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.column3:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in 0.3s;
+}
+
+.column4 {
+    background: url(images/carpet-tiles/73dd9f5836c8efb10d6448d0b835205c.jpg) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.column4:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in 0.3s;
+}
+
+.badge2 {
+    background: rgb(243,243,243) !important;
+    position: relative;
+    top: 8.8rem;
+
+}
+
+.view {
+    position: relative;
+    left: 10rem
+}
+
+.upload {
+    position: relative;
+    left: 47rem;
+}
+
+
+footer {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    background-color: rgb(255, 197, 0);
+    color: rgb(26, 20, 72);
+}
+
+.social-links a {
+    background: rgb(26, 20, 72);
+}
+
+.social-links a i {
+    color: rgb(255, 197, 0);
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in 0.3s;
+}
+
+.social-links a:hover i {
+    color: rgb(243,243,243);
+    transition: 0.2s ease-in 0.3s;
+}
+
+
+
+@media  screen and (min-width: 375px) {
+        
+}
