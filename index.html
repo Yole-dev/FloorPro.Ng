@@ -13,8 +13,8 @@
 <script src="https://use.fontawesome.com/80cdeb5bd2.js"></script>
 
 <body>
-    <header id="swup" class="transition-fade">
-        <div class=" sm:hidden md:flex div1 text-white items-center">
+    <header>
+        <div class=" hidden md:flex div1 text-white items-center">
 
             <div class=" welcome flex justify-between border-0 border-r p-3">
                 <p>Welcome to our online shop</p>
@@ -28,7 +28,59 @@
             
         </div>
 
-        <nav class="sm:hidden md:block">
+        <!-- nav for mobile view -->
+        <nav class=" flex flex-col justify-center items-center md:hidden">
+
+            <div class="flex justify-between py-5 mainNav">
+                <a href="index.html"><img src="images/LOGO/Logo2.png" alt="logo of company" class="w-16"></a>
+                <button class="openNav" ><i><ion-icon name="menu-outline"></ion-icon></i></button>
+            </div>
+
+            <!-- main nav for mobile view -->
+            <nav class="mobileNav flex-col fixed top-0 hidden">
+                <div class="flex justify-between py-5">
+                    <a href="index.html"><img src="images/LOGO/Logo2.png" alt="logo of company" class="w-16"></a>
+                    <button class="closeNav" ><i><ion-icon name="close-outline"></ion-icon></i></button>
+                </div>
+
+                <div class="flex flex-col justify-center items-center buttonLinks relative top-24">
+                    <button class="rounded-xl py-2 w-1/2 mb-8"><a href="index.html">Home</a></button>
+                    <button class="rounded-xl py-2 w-1/2 mb-8"><a href="shop.html">Shop</a></button>
+                    <button class="rounded-xl py-2 w-1/2 mb-8"><a href="#">Blog</a></button>
+                    <button class="rounded-xl py-2 w-1/2 mb-8"><a href="about.html">About Us</a></button>
+                    <button class="rounded-xl py-2 w-1/2 mb-20"><a href="contact.html">Contact Us</a></button>
+
+                    <div class="flex justify-between w-full">
+                    <button class="rounded-xl py-2 w-2/5"><a href="index.html">Login</a></button>
+                    <button class="rounded-xl py-2 w-2/5"><a href="index.html">Sign up</a></button>
+                    </div>
+                    
+                </div>
+            </nav>
+
+
+            <div class="rounded searchbar flex justify-center">
+                <input type="search" placeholder="Search here" class="rounded-l-full text-sm pl-3 py-2">
+
+                <div class="pr-4 pt-2 pl-3 border-l-2 searchDropdown flex flex-col cursor-pointer">
+                   <p> Categories  <i class="relative top-1 left-1"><ion-icon name="chevron-down-outline"></ion-icon></i></p>
+
+                    <!-- <div class="flex flex-col hidden">
+                        <p>item</p>
+                        <p>item</p>
+                        <p>item</p>
+                    </div> -->
+
+                </div>
+                <button class="search p-2 px-2 rounded-r-full"><i class="fa fa-search text-white text-xs"></i></button>
+            </div>
+
+
+
+        </nav>
+
+        <!-- nav for desktop view -->
+        <nav class="hidden md:block">
             <div class="p-4 flex justify-between items-center">
                 <a href="index.html"><img src="Images/LOGO/Logo2.png" alt="Company Logo" class="w-28 h-10"></a>
     
@@ -54,8 +106,37 @@
             
         </nav>
        
+        <!-- mobile view -->
 
-        <div class=" sm:hidden md:flex div2">
+        <div class="flex flex-col px-6 my-5 md:hidden mobileInnerdiv">
+            <div class="flex flex-col justify-center items-center">
+                <p class="text-xl mt-4 font-semibold">TOP COLLECTIONS 2022</p>
+                <p class="text-2xl font-bold">Gives you the <br> Excellent and <br> luxurious finishing</p>
+                <p class="text-lg mt-2 text-gray-500">Get 50% off all products</p>
+
+                 <button class="px-10 py-3 mb-4 mt-2 rounded-2xl shadow">
+                    <a href="#">ORDER NOW</a>
+                </button>
+            </div>
+
+            <!-- carousel -->
+            <div class=" swiper w-64 my-5 rounded-xl">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper ">
+                  <!-- Slides -->
+                  <div class="swiper-slide  w-48"><img src="images/carpet-tiles/6590f9e31f646c184508123753b99417.jpg" alt="" class="rounded-xl"></div>
+                  <div class="swiper-slide "><img src="images/carpet-tiles/54474_00108_feature1-compressed.jpg" alt="" class="rounded-xl"></div>
+                  <div class="swiper-slide "><img src="images/carpet-tiles/fe3fe1d2174b187b64d4ff22b8e2bfbe.jpg" alt="" class="rounded-xl"></div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              
+              </div>
+            
+        </div>
+
+        <!-- desktop view -->
+        <div class="hidden md:flex div2">
 
             <!-- dropdown not functional for now -->
             <div class="dropdown  mr-10">
@@ -106,7 +187,7 @@
                       <!-- Slides -->
                       <div class="swiper-slide  w-48"><img src="images/carpet-tiles/6590f9e31f646c184508123753b99417.jpg" alt="" class="rounded-xl"></div>
                       <div class="swiper-slide "><img src="images/carpet-tiles/54474_00108_feature1-compressed.jpg" alt="" class="rounded-xl"></div>
-                      <div class="swiper-slide "><img src="images/carpet-tiles/images(39).jpg" alt="" class="rounded-xl"></div>
+                      <div class="swiper-slide "><img src="images/carpet-tiles/fe3fe1d2174b187b64d4ff22b8e2bfbe.jpg" alt="" class="rounded-xl"></div>
                     </div>
 
                     <div class="swiper-pagination"></div>
@@ -117,94 +198,94 @@
 
     </header>
 
-    <main class="sm:hidden md:block my-5">
-        <section class="flex md:flex-row flex-col md:justify-between align-between justify-center delivery mt-10 ">
-            <div class="flex p-10 shadow-lg">
+    <main class="my-5">
+        <section class="flex flex-col md:flex-row  md:justify-between align-between justify-center delivery mt-10 ">
+            <div class="flex flex-col md:flex-row items-center mb-10 md:mb-0 p-10 shadow-lg w-full">
                 <i class="fa fa-truck fa-3x pr-4"></i>
                 <p class="text-center font-semibold">Choose your <br>location</p>
             </div>
 
-            <div class="flex p-10 shadow-lg">
+            <div class="flex flex-col md:flex-row items-center mb-10 md:mb-0 p-10 shadow-lg w-full">
                 <i class="fa fa-gift fa-3x pr-4"></i>
-                <p class="text-center font-semibold">Choose your <br>location</p>
+                <p class="text-center font-semibold">Carefully packaged</p>
             </div>
 
-            <div class="flex p-10 shadow-lg">
+            <div class="flex flex-col md:flex-row items-center mb-10 md:mb-0 p-10 shadow-lg w-full">
                 <i class="fa fa-credit-card-alt fa-3x pr-4"></i>
-                <p class="text-center font-semibold">Choose your <br>location</p>
+                <p class="text-center font-semibold">Safe and Secure Payment</p>
             </div>
 
-            <div class="flex p-10 shadow-lg">
+            <div class="flex flex-col md:flex-row items-center mb-10 md:mb-0 p-10 shadow-lg w-full">
                 <i class="fa fa-headphones fa-3x pr-4"></i>
-                <p class="text-center font-semibold">Choose your <br>location</p>
+                <p class="text-center font-semibold">24/7 Customer Care<br>Service</p>
             </div>
         </section>
 
         <section class="mt-10 mb-2">
-            <p class="text-center text-sm">Get Access to Tilers Prosfessionals and Services</p>
-            <p class="font-bold text-3xl text-center">Book an Appointment</p>
+            <p class="text-center text-sm">Get Access to Installers <br> Prosfessionals and Services</p>
+            <p class="font-bold text-xl text-center">Book an Appointment</p>
         </section>
 
-        <section class="flex justify-between mt-10">
-            <div class="appointment-text text-lg text-white h-52">
+        <section class="flex flex-col justify-center items-center md:flex-row md:justify-between mt-10">
+            <div class="appointment-text text-lg text-white h-52 hidden md:block">
                 <p class="text-justify">We give you acceess to professionals <br> tilers who will give you excellent and <br> luxurious finishings to your houses.</p>
             </div>
 
-            <form action="#">
+            <form action="#" class="text-center">
                 <div class="flex ">
                     <div class="flex flex-col mr-5">
                         <label for="#">First Name</label>
-                        <input type="text" placeholder="Enter First Name" class="text-sm  border rounded shadow pl-4 py-1" required>
+                        <input type="text" placeholder="Enter First Name" class="text-sm  border rounded shadow pl-2 md:pl-4 py-1 w-36 md:w-40" required>
                     </div>
 
                     <div class="flex flex-col">
                         <label for="#">Last Name</label>
-                        <input type="text" placeholder="Enter Last Name" class="text-sm  border rounded shadow pl-4 py-1" required>
+                        <input type="text" placeholder="Enter Last Name" class="text-sm  border rounded shadow pl-2 md:pl-4 py-1 w-36 md:w-40" required>
                     </div>
                 </div>
 
                 <div class="flex mt-5">
                     <div class="flex flex-col mr-5">
                         <label for="#">Phone Number</label>
-                        <input type="tel" placeholder="Enter Phone Number" class="text-sm  border rounded shadow pl-4 py-1" required>
+                        <input type="tel" placeholder="Enter Phone Number" class="text-sm  border rounded shadow pl-2 md:pl-4 py-1 w-36 md:w-40" required>
                     </div>
 
                     <div class="flex flex-col">
                         <label for="#">Email Address</label>
-                        <input type="email" placeholder="Enter Email Address" class="text-sm  border rounded shadow pl-4 py-1" required>
+                        <input type="email" placeholder="Enter Email Address" class="text-sm  border rounded shadow pl-2 md:pl-4 py-1 w-36 md:w-40" required>
                     </div>
                 </div>
 
                 <div class="flex mt-5">
                     <div class="flex flex-col mr-5">
                         <label for="#">Select Date</label>
-                        <input type="date" placeholder="Enter First Name" class="text-sm  border rounded shadow pl-4 pr-12 py-1" required>
+                        <input type="date" placeholder="Enter First Name" class="text-sm  border rounded shadow pl-2 md:pl-4 pr-7 md:pr-12  py-1 w-36 md:w-40" required>
                     </div>
 
                     <div class="flex flex-col select-time">
                         <label for="#">Select Time</label>
-                        <input type="time" placeholder="Enter Last Name" class="text-sm  border rounded shadow pl-4  py-1" required>
+                        <input type="time" placeholder="Enter Last Name" class="text-sm  border rounded shadow pl-2 md:pl-4 w-36 md:w-40 py-1" required>
                     </div>
                 </div>
 
-                <button class=" mt-5 py-2 rounded-lg text-sm px-16 shadow-lg"> Hire a tiler</button>
+                <button class=" mt-5 py-2 rounded-lg text-sm px-16 shadow-lg"> Hire an Installer</button>
                 
             </form>
 
         </section>
  
         <section class="flex flex-col mt-10" >
-            <p class="text-center text-2xl font-bold">OUR PRODUCTS</p>
+            <p class="text-center text-xl font-bold">OUR PRODUCTS</p>
 
-            <div class="grid gap-4 grid-cols-3 mt-10">
+            <div class="md:grid gap-4 grid-cols-3 mt-10 hidden">
                 <p class="text-xl font-bold">All Products</p>
                 <p class="text-xl font-bold arrivals">New Arrivals</p>
                 <p class="text-xl font-bold">Best Sellers</p>
             </div>
 
-            <div class="grid gap-3 grid-cols-4 mt-10">
-                <div>
-                    <div class="w-44 h-44 rounded col-1">
+            <div class="flex flex-col justify-center items-center md:grid gap-3 grid-cols-4 mt-10">
+                <div class="mb-5 md:mb-0">
+                    <div class="w-52 h-52 md:w-44 md:h-44 rounded col-1">
                         <div class="badge rounded-b font-semibold pl-3 w-14">New</div>
                     </div>
                     <p class="text-gray-400 mt-4">Tile</p>
@@ -212,8 +293,8 @@
                     <p class="font-bold text-sm">$34 <span><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></span> </p>
                 </div>
 
-                <div>
-                    <div class="w-44 h-44 rounded col-2">
+                <div class="mb-5 md:mb-0">
+                    <div class="w-52 h-52 md:w-44 md:h-44 rounded col-2">
                         <div class="badge rounded-b font-semibold pl-3 w-14">New</div>
                     </div>
                     <p class="text-gray-400 mt-4">Tile</p>
@@ -222,8 +303,8 @@
                 </div>
 
                 
-                <div>
-                    <div class="w-44 h-44 rounded col-3 ">
+                <div class="mb-5 md:mb-0">
+                    <div class="w-52 h-52 md:w-44 md:h-44 rounded col-3 ">
                         <div class="badge rounded-b font-semibold pl-3 w-14">New</div>
                     </div>
                     <p class="text-gray-400 mt-4">Tile</p>
@@ -231,8 +312,8 @@
                     <p class="font-bold text-sm">$34 <span><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></span> </p>
                 </div>
 
-                <div>
-                    <div class="w-44 h-44 rounded col-4">
+                <div class="mb-5 md:mb-0">
+                    <div class="w-52 h-52 md:w-44 md:h-44 rounded col-4">
                         <div class="badge rounded-b font-semibold pl-3 w-14">New</div>
                     </div>
                     <p class="text-gray-400 mt-4">Tile</p>
@@ -244,10 +325,10 @@
         </section>
 
         <section class="flex  flex-col justify-center align-center mt-10 testimonials">
-            <p class="text-2xl font-bold text-center">What our customers are saying</p>
-            <div class="swiper rounded-xl mt-10 ">
+            <p class="text-xl md:text-2xl font-bold text-center">What our customers <br> are saying</p>
+            <div class="swiper w-72  rounded-xl my-5">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper" >
+                <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide flex flex-col justify-center items-center rounded-xl">
                     <img src="images/carpet-tiles/6590f9e31f646c184508123753b99417.jpg" alt="profile picture" class="w-12 h-12 rounded-full border-4 border-white">
@@ -277,19 +358,19 @@
         </section>
 
         <section class="flex flex-col justify-center align-center mt-10">
-            <p class="text-2xl font-bold text-center">Quotation</p>
+            <p class="text-xl md:text-2xl font-bold text-center">Quotation</p>
 
-            <div class="px-10 py-8 rounded-lg quotation flex justify-between mt-5">
+            <div class="px-10 py-8 rounded-lg quotation flex flex-col md:flex-row md:justify-between mt-5">
                 <div>
-                    <p class="text-xl font-semibold mb-5 ">Just one click away!</p>
-                    <p>Get quote, compare, and buy policies for Tiles, SPC, <br> Laminate, WPC, Carpet tiles, Epoxy flooring, Stamped <br> 
+                    <p class="text-xl font-semibold mb-5 text-center md:text-left ">Just one click away!</p>
+                    <p class="text-center md:text-left">Get quote, compare, and buy policies for Tiles, SPC, <br> Laminate, WPC, Carpet tiles, Epoxy flooring, Stamped <br> 
                     concrete, Accessories, Wall cornice, in less than 2 minutes.</p>
 
                     <button class="w-48 mb-4 mt-5 py-2 rounded-xl shadow getbutton">Get a quote</button>
                 </div>
 
                 <div>
-                    <img src="images/pexels-daria-shevtsova-1583653.jpg" alt="" class="w-96 h-72 rounded">
+                    <img src="images/pexels-daria-shevtsova-1583653.jpg" alt="" class="w-64 h-64 md:w-96 md:h-72 rounded">
                 </div>
             </div>
 
@@ -298,40 +379,40 @@
         </section>
 
         <section class="mt-10 flex flex-col">
-            <p class="text-2xl font-bold text-center">Our Work</p>
+            <p class="text-xl md:text-2xl font-bold text-center">Our Work</p>
             <p class="text-center mt-5 text-sm">From wekend projects to full remodels an new builds, check out <br> spaces that were designed and shared with excitement and pride.</p>
-            <p class="mt-5 text-2xl font-bold">PORTFOLIO</p>
+            <p class="mt-5 text-xl md:text-2xl font-bold text-center md:text-left ">PORTFOLIO</p>
             <hr>
 
             
-            <div class="grid gap-3 grid-cols-4 mt-4">
-                <div>
-                    <div class="w-44 h-44 rounded last column1">
+            <div class="flex flex-col justify-center items-center md:grid gap-3 grid-cols-4 mt-4">
+                <div class="mb-5 md:mb-0">
+                    <div class="w-52 h-52 md:w-44 md:h-44 rounded last column1">
                         <div class="badge2 font-semibold rounded  py-2 text-sm text-center">CARPET TILES</div>
                     </div>
                 </div>
 
-                <div>
-                    <div class="w-44 h-44 rounded last column2">
+                <div class="mb-5 md:mb-0">
+                    <div class="w-52 h-52 md:w-44 md:h-44 rounded last column2">
                         <div class="badge2 font-semibold rounded  py-2 text-sm text-center">CARPET TILES</div>
                     </div>
                 </div>
 
-                <div>
-                    <div class="w-44 h-44 rounded last column3">
+                <div class="mb-5 md:mb-0">
+                    <div class="w-52 h-52 md:w-44 md:h-44 rounded last column3">
                         <div class="badge2 font-semibold rounded  py-2 text-sm text-center">CARPET TILES</div>
                     </div>
                 </div>
 
-                <div>
-                    <div class="w-44 h-44 rounded last column4">
+                <div class="mb-5 md:mb-0">
+                    <div class="w-52 h-52 md:w-44 md:h-44 rounded last column4">
                         <div class="badge2 font-semibold rounded  py-2 text-sm text-center">CARPET TILES</div>
                     </div>
                 </div>
             </div>
 
-            <div class="flex mt-5">
-                    <a href="#" class="font-semibold text-sm view">VIEW ALL PHOTOS <span><i class="fa fa-angle-right "></i></span></a>
+            <div class="flex flex-col justify-center items-center md:flex-row mt-5">
+                    <a href="#" class="font-semibold text-sm view mb-5 md:mb-0">VIEW ALL PHOTOS <span><i class="fa fa-angle-right "></i></span></a>
                     <a href="#" class="font-semibold text-sm upload">UPLOAD PHOTOS <span><i class="fa fa-angle-right "></i></span></a>
             </div>
         </section>
@@ -340,8 +421,8 @@
 
     <footer class="sm:hidden md:block py-5 mt-10">
 
-        <div class="flex justify-between">
-            <div class="flex flex-col socials">
+        <div class="flex flex-col md:flex-row justify-between">
+            <div class="md:flex flex-col socials hidden">
                 <!-- logo goes here -->
                 <p>We give you access to <br> professional tilers who will <br>
                 give you excellent and <br> luxurious finishings to your <br> houses.</p>
@@ -353,8 +434,29 @@
                     <a href="https://www.linkedin.com/company/floorpro-nigeria/" class="rounded-full  w-6"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
+
+            <!-- for mobile view -->
+
+            <div class="flex justify-between mb-5 md:hidden">
+                <div>
+                    <!-- logo goes here -->
+                    <p>We give you access to <br> professional tilers who will <br>
+                        give you excellent and <br> luxurious finishings to your <br> houses.</p>
+                </div>
+
+
+                
+                <div class="flex flex-col">
+                    <p class="text-lg font-semibold mb-5">Help</p>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Shopping and Delivery</a>
+                    <a href="#">Return Policy</a>
+                    <a href="#">Track Your Order</a>
+                </div>
+
+            </div>
     
-            <div class="flex flex-col">
+            <div class="md:flex flex-col hidden">
                 <p class="text-lg font-semibold mb-5">Help</p>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Shopping and Delivery</a>
@@ -362,32 +464,80 @@
                 <a href="#">Track Your Order</a>
             </div>
     
-            <div class="flex flex-col">
+            <!-- for mobile view -->
+            <div class="flex md:hidden justify-between w-full">
+                <div class="flex flex-col">
+                    <p class="text-lg font-semibold mb-5">Store</p>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="#">Services</a>
+                    <a href="testimonials">Testimonials</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">FAQs</a>
+                </div>
+        
+                <div class="flex flex-col">
+                    <p class="text-lg font-semibold mb-5">Support</p>
+                    <a href="#">Feedback</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Download app</a>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+            </div>
+
+            <!-- for desktop view -->
+            <div class="md:flex flex-col hidden">
                 <p class="text-lg font-semibold mb-5">Store</p>
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
-                <a href="services.html">Services</a>
+                <a href="#">Services</a>
                 <a href="testimonials">Testimonials</a>
                 <a href="#">Blog</a>
                 <a href="#">Careers</a>
                 <a href="#">FAQs</a>
             </div>
     
-            <div class="flex flex-col">
+            <div class="md:flex flex-col hidden">
                 <p class="text-lg font-semibold mb-5">Support</p>
-                <a href="feedback.html">Feedback</a>
-                <a href="contact-us.html">Contact Us</a>
+                <a href="#">Feedback</a>
+                <a href="contact.html">Contact Us</a>
                 <a href="#">Download app</a>
                 <a href="#">Terms and Conditions</a>
             </div>
         </div>
         
+        <div class="flex justify-center mt-5 text-center text-2xl social-links md:hidden">
+            <a href="https://www.facebook.com/floorpro.ng/" class="rounded-full  w-8 h-8 mr-5"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.twitter.com/floorproNg/" class="rounded-full  w-8 h-8 mr-5"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/floorpro.ng/" class="rounded-full  w-8 h-8 mr-5"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/floorpro-nigeria/" class="rounded-full  w-8 h-8"><i class="fa fa-linkedin"></i></a>
+        </div>
         <p class="text-center text-sm mt-5">All Rights Reserved Floorpro &copy 2022</p>
+        <p class="text-center text-xs mt-2">Powered by Dev-Opps</p>
     </footer>
 
-
     <script>
-            const swup = new Swup( );
+        //nav bar variables
+        const mobileNav = document.querySelector('.mobileNav');
+        const closeNav = document.querySelector('.closeNav');
+        const openNav = document.querySelector('.openNav');
+        const mainNav = document.querySelector('.mainNav');
+
+
+        //for toggling the nav bar
+        openNav.addEventListener('click', show);
+        closeNav.addEventListener('click', close);
+
+        function show(){
+            mobileNav.style.display = 'flex';
+            mainNav.style.opacity = '0';
+        }
+
+        function close() {
+            mainNav.style.opacity = '1';
+            mobileNav.style.display = 'none';
+        }
     </script>
 
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
