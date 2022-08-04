@@ -12,7 +12,8 @@
 <body>
 <script src="https://use.fontawesome.com/80cdeb5bd2.js"></script>
     <head>
-        <nav class="flex justify-between items-center py-4 px-24">
+        <!-- nav for desktop view -->
+        <nav class="hidden md:flex justify-between items-center py-4 px-24">
             <a href="index.html"><img src="Images/LOGO/Logo2.png" alt="Company Logo" class="w-28 h-10"></a>
 
             <ul class="flex py-4 relative right-72">
@@ -23,31 +24,63 @@
                 <li class="pl-4"><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
+
+        <!-- nav for mobile view -->
+        <nav class="md:hidden">
+            <div class="flex justify-between py-5 mainNav">
+                <a href="index.html"><img src="images/LOGO/Logo2.png" alt="logo of company" class="w-16"></a>
+                <button class="openNav" ><i><ion-icon name="menu-outline"></ion-icon></i></button>
+            </div>
+    
+            <!-- main nav for mobile view -->
+            <nav class="mobileNav flex-col fixed top-0 hidden">
+                <div class="flex justify-between py-5">
+                    <a href="index.html"><img src="images/LOGO/Logo2.png" alt="logo of company" class="w-16"></a>
+                    <button class="closeNav" ><i><ion-icon name="close-outline"></ion-icon></i></button>
+                </div>
+    
+                <div class="flex flex-col justify-center items-center buttonLinks relative top-24">
+                    <button class="rounded-xl py-2 w-1/2 mb-8"><a href="index.html">Home</a></button>
+                    <button class="rounded-xl py-2 w-1/2 mb-8"><a href="shop.html">Shop</a></button>
+                    <button class="rounded-xl py-2 w-1/2 mb-8"><a href="#">Blog</a></button>
+                    <button class="rounded-xl py-2 w-1/2 mb-8"><a href="about.html">About Us</a></button>
+                    <button class="rounded-xl py-2 w-1/2 mb-20"><a href="contact.html">Contact Us</a></button>
+    
+                    <div class="flex justify-between w-full">
+                    <button class="rounded-xl py-2 w-2/5"><a href="index.html">Login</a></button>
+                    <button class="rounded-xl py-2 w-2/5"><a href="index.html">Sign up</a></button>
+                    </div>
+                    
+                </div>
+            </nav>
+        </nav>
+
+
     </head>
 
-    <main class="my-10 px-24">
-        <div class="flex justify-center items-center">
-            <div class="flex flex-col mr-10">
+    <main class="md:my-10 px-2 md:px-24">
+        <div class="flex flex-col md:flex-row justify-center items-center">
+            <div class="flex flex-col mb-10 md:mr-10 ">
                 <p class="text-5xl font-bold mb-5">
                     Thanks for your interest <br> in Floorpro
                 </p>
 
-                <p>You want to hire a tiler or buy tiles to add some finishings to your house?<br>
+                <p>You want to hire an installer or buy tiles to add some finishings to your house?<br>
                     Submit this form and our sales representatives will contact you soon</p>
 
                     <img src="images/pexels-eva-bronzini-6956351.jpg" alt="" class="h-80 w-80 rounded mt-5">
             </div>
 
             <form action="#">
-                <div class="flex mb-6">
-                    <div class="flex flex-col mr-10">
+                <div class="flex justify-between md:justify-center mb-6">
+                    <div class="flex flex-col md:mr-10">
                         <label for="firstName">First Name</label>
-                        <input type="text" class="border border-1 mt-1 rounded shadow text-sm py-1 pl-1 w-48" placeholder="Enter First Name" required>
+                        <input type="text" class="border border-1 mt-1 rounded shadow text-sm py-1 pl-1 md:w-48" placeholder="Enter First Name" required>
                     </div>
                     
                     <div class="flex flex-col ">
                         <label for="lastName">Last Name</label>
-                        <input type="text" class="border border-1 mt-1 rounded shadow text-sm py-1 pl-1 w-48" placeholder="Enter Last Name" required>
+                        <input type="text" class="border border-1 mt-1 rounded shadow text-sm py-1 pl-1 md:w-48" placeholder="Enter Last Name" required>
                     </div>
                 </div>
 
@@ -69,8 +102,11 @@
 
                 <button class="shadow w-full text-sm py-2 mb-5 font-semibold rounded">Submit Request</button>
 
-                <p class="text-xs font-semibold">By clicking "Submit Request" you agree to receive updates on our new arrivals in <br>
+                <p class="text-xs font-semibold hidden md:block">By clicking "Submit Request" you agree to receive updates on our new arrivals in <br>
                     accordance to our Privacy Policy.</p>
+
+                <p class=" md:hidden text-xs text-center font-semibold">By clicking "Submit Request" you agree to receive updates on our new arrivals in
+                        accordance to our Privacy Policy.</p>
             </form>
         </div>
 
@@ -78,8 +114,8 @@
 
     <footer class="sm:hidden md:block py-5 mt-10">
 
-        <div class="flex justify-between">
-            <div class="flex flex-col socials">
+        <div class="flex flex-col md:flex-row justify-between">
+            <div class="md:flex flex-col socials hidden">
                 <!-- logo goes here -->
                 <p>We give you access to <br> professional tilers who will <br>
                 give you excellent and <br> luxurious finishings to your <br> houses.</p>
@@ -91,8 +127,29 @@
                     <a href="https://www.linkedin.com/company/floorpro-nigeria/" class="rounded-full  w-6"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
+
+            <!-- for mobile view -->
+
+            <div class="flex justify-between mb-5 md:hidden">
+                <div>
+                    <!-- logo goes here -->
+                    <p>We give you access to <br> professional tilers who will <br>
+                        give you excellent and <br> luxurious finishings to your <br> houses.</p>
+                </div>
+
+
+                
+                <div class="flex flex-col">
+                    <p class="text-lg font-semibold mb-5">Help</p>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Shopping and Delivery</a>
+                    <a href="#">Return Policy</a>
+                    <a href="#">Track Your Order</a>
+                </div>
+
+            </div>
     
-            <div class="flex flex-col">
+            <div class="md:flex flex-col hidden">
                 <p class="text-lg font-semibold mb-5">Help</p>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Shopping and Delivery</a>
@@ -100,31 +157,82 @@
                 <a href="#">Track Your Order</a>
             </div>
     
-            <div class="flex flex-col">
+            <!-- for mobile view -->
+            <div class="flex md:hidden justify-between w-full">
+                <div class="flex flex-col">
+                    <p class="text-lg font-semibold mb-5">Store</p>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="#">Services</a>
+                    <a href="testimonials">Testimonials</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">FAQs</a>
+                </div>
+        
+                <div class="flex flex-col">
+                    <p class="text-lg font-semibold mb-5">Support</p>
+                    <a href="#">Feedback</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Download app</a>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+            </div>
+
+            <!-- for desktop view -->
+            <div class="md:flex flex-col hidden">
                 <p class="text-lg font-semibold mb-5">Store</p>
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
-                <a href="services.html">Services</a>
+                <a href="#">Services</a>
                 <a href="testimonials">Testimonials</a>
                 <a href="#">Blog</a>
                 <a href="#">Careers</a>
                 <a href="#">FAQs</a>
             </div>
     
-            <div class="flex flex-col">
+            <div class="md:flex flex-col hidden">
                 <p class="text-lg font-semibold mb-5">Support</p>
-                <a href="feedback.html">Feedback</a>
-                <a href="contact-us.html">Contact Us</a>
+                <a href="#">Feedback</a>
+                <a href="contact.html">Contact Us</a>
                 <a href="#">Download app</a>
                 <a href="#">Terms and Conditions</a>
             </div>
         </div>
         
+        <div class="flex justify-center mt-5 text-center text-2xl social-links md:hidden">
+            <a href="https://www.facebook.com/floorpro.ng/" class="rounded-full  w-8 h-8 mr-5"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.twitter.com/floorproNg/" class="rounded-full  w-8 h-8 mr-5"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/floorpro.ng/" class="rounded-full  w-8 h-8 mr-5"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/floorpro-nigeria/" class="rounded-full  w-8 h-8"><i class="fa fa-linkedin"></i></a>
+        </div>
         <p class="text-center text-sm mt-5">All Rights Reserved Floorpro &copy 2022</p>
+        <p class="text-center text-xs mt-2">Powered by Dev-Opps</p>
     </footer>
 
-    
+    <script>
+        //nav bar variables
+        const mobileNav = document.querySelector('.mobileNav');
+        const closeNav = document.querySelector('.closeNav');
+        const openNav = document.querySelector('.openNav');
+        const mainNav = document.querySelector('.mainNav');
+
+
+        //for toggling the nav bar
+        openNav.addEventListener('click', show);
+        closeNav.addEventListener('click', close);
+
+        function show(){
+            mobileNav.style.display = 'flex';
+            mainNav.style.opacity = '0';
+        }
+
+        function close() {
+            mainNav.style.opacity = '1';
+            mobileNav.style.display = 'none';
+        }
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
