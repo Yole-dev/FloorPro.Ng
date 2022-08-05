@@ -36,6 +36,15 @@ main section div a:hover i {
     color:rgb(255, 197, 0);
 }
 
+.whatsapp {
+    position: fixed;
+    left: 92rem;
+    top: 43rem;
+    z-index: 9;
+    background: rgb(255, 197, 0);
+    padding: 10px;
+}
+
 footer {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -91,6 +100,15 @@ footer {
     footer {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .whatsappMobile {
+        position: fixed;
+        left: 20.3rem;
+        top: 40rem;
+        z-index: 9;
+        background: rgb(255, 197, 0);
+        padding: 10px;
     }
 }
 
