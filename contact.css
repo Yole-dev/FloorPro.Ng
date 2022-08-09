@@ -78,7 +78,7 @@ footer {
 }
 
 
-@media  screen and (max-width: 375px)  {
+@media  screen and (min-width: 375px)  {
     nav div {
         padding-left: 10px;
         padding-right: 10px;
