@@ -371,7 +371,7 @@ footer {
 
 
 
-@media  screen and (min-width: 375px) {
+@media  screen and (max-width: 375px) {
     nav div {
         padding-left: 10px;
         padding-right: 10px;
@@ -454,8 +454,8 @@ footer {
 
     .whatsappMobile {
         position: fixed;
-        left: 20.3rem;
-        top: 40rem;
+        left: 21rem;
+        top: 42.5rem;
         z-index: 9;
         background: rgb(255, 197, 0);
         padding: 10px;
